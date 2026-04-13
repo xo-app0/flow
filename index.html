@@ -1040,15 +1040,34 @@ footer{
           <div class="mini-kpi"><div class="mini-kpi-v" style="color:#27AE60">+23%</div><div class="mini-kpi-l">تحسن</div></div>
         </div>
         <div style="display:flex;align-items:flex-end;gap:4px;height:55px;margin:8px 0;padding:0 4px;">
-          ${[45,60,30,75,80,55,90].map((v,i)=>{
-            const days=['س','ح','ن','ث','ر','خ','ج'];
-            const c=v>=70?'#27AE60':'#4A7FC1';
-            const h=Math.round(v*0.45);
-            return `<div style="flex:1;display:flex;flex-direction:column;align-items:center;">
-              <div style="width:100%;height:${h}px;background:${c};border-radius:2px 2px 0 0;opacity:.85"></div>
-              <div style="font-size:8px;color:var(--muted);margin-top:2px">${days[i]}</div>
-            </div>`;
-          }).join('')}
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;">
+            <div style="width:100%;height:20px;background:#4A7FC1;border-radius:2px 2px 0 0;opacity:.85"></div>
+            <div style="font-size:8px;color:var(--muted);margin-top:2px">س</div>
+          </div>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;">
+            <div style="width:100%;height:27px;background:#4A7FC1;border-radius:2px 2px 0 0;opacity:.85"></div>
+            <div style="font-size:8px;color:var(--muted);margin-top:2px">ح</div>
+          </div>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;">
+            <div style="width:100%;height:14px;background:#4A7FC1;border-radius:2px 2px 0 0;opacity:.85"></div>
+            <div style="font-size:8px;color:var(--muted);margin-top:2px">ن</div>
+          </div>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;">
+            <div style="width:100%;height:34px;background:#27AE60;border-radius:2px 2px 0 0;opacity:.85"></div>
+            <div style="font-size:8px;color:var(--muted);margin-top:2px">ث</div>
+          </div>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;">
+            <div style="width:100%;height:36px;background:#27AE60;border-radius:2px 2px 0 0;opacity:.85"></div>
+            <div style="font-size:8px;color:var(--muted);margin-top:2px">ر</div>
+          </div>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;">
+            <div style="width:100%;height:25px;background:#4A7FC1;border-radius:2px 2px 0 0;opacity:.85"></div>
+            <div style="font-size:8px;color:var(--muted);margin-top:2px">خ</div>
+          </div>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;">
+            <div style="width:100%;height:41px;background:#27AE60;border-radius:2px 2px 0 0;opacity:.85"></div>
+            <div style="font-size:8px;color:var(--muted);margin-top:2px">ج</div>
+          </div>
         </div>
         <div style="background:rgba(27,58,107,0.2);border:1px solid var(--border);border-radius:10px;padding:10px;">
           <div style="font-size:11px;color:var(--b3);font-weight:700;margin-bottom:4px;">🤖 توصية الذكاء الاصطناعي</div>
